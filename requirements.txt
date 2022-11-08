@@ -71,4 +71,4 @@ sxsdiff==0.3.0
 toposort
 traitlets==4.3.2
 wcwidth==0.1.7
-xmltodict==0.11.0
+xmltodict==0.13.0
