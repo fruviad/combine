@@ -11,7 +11,10 @@
     {% if jobs|length > 0 %}
 
         <!-- optional job lineage network node graph -->
-        {% include 'core/job_lineage_network.html' %}
+        <button class="btn btn-outline-primary btn-sm" onclick="hide_job_family_diagram_container()">Show/Hide Job Diagram</button>
+	<div id="job_family_diagram_container_hider">
+            {% include 'core/job_lineage_network.html' %}
+        </div>
 
         <!-- job datatable -->
         {% include 'core/jobs_dt_table.html' %}
@@ -28,7 +31,6 @@
             </div>
         </div>
     {% endif %}
-
     </div>
 
     <div class="row">
@@ -102,4 +104,14 @@
         </div>
     </div>
 
+        <script>
+        function hide_job_family_diagram_container() {
+            var x = document.getElementById("job_family_diagram_container_hider");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        </script>
 {% endblock %}
