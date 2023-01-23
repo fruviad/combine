@@ -33,7 +33,7 @@ jsonschema==2.6.0
 kombu==4.6.3
 livy==0.3.0
 lxml==4.8.0
-mongoengine==0.24.1
+mongoengine==0.26.0
 mysqlclient==1.4.2
 numpy==1.21.6
 openpyxl==2.4.9
